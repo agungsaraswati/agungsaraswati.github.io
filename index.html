@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diah Saraswati — Cyber Security Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">diah.saraswati | cyber security enthusiast</span>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#ctf">CTF</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section style="padding-top: 0;">
+  <div class="hero">
+    <div class="hero-text fade-in">
+      <div class="hero-badge">Open to Internship Opportunities</div>
+      <h1>I Gusti Agung<br /><span>Diah Saraswati</span></h1>
+      <p class="hero-desc">
+        Cyber Security Enthusiast focused on Penetration Testing & Vulnerability Assessment. 
+        Hands-on experience in responsible disclosure with real world findings on production systems, following OWASP and CVSS standards.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="mailto:agungsaraswati251204@gmail.com" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-right fade-in">
+      <div class="profile-card">
+        <img src="foto/WhatsApp_Image_2026-02-13_at_19.02.09-removebg-preview.png" alt="Diah Saraswati" class="profile-img"
+          onerror="this.style.background='#EEF3FF';this.style.display='flex';this.src='';this.alt='DS'" />
+        <div class="profile-name">I Gst Ag Diah Saraswati</div>
+        <div class="profile-role">cyber security enthusiast</div>
+        <div class="profile-stats">
+          <div class="stat">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Findings</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">8.1</div>
+            <div class="stat-label">Max CVSS</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3.89</div>
+            <div class="stat-label">GPA</div>
+          </div>
+        </div>
+        <div class="profile-tags">
+          <span class="tag">pentest</span>
+          <span class="tag">owasp</span>
+          <span class="tag">sqa</span>
+          <span class="tag">networking</span>
+          <span class="tag">burpsuite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">|01 — expertise</div>
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-desc">Tools and techniques I use to find, analyze, and report security vulnerabilities.</p>
+    <div class="skills-grid">
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🔍</div>
+        <div class="skill-name">Penetration Testing</div>
+        <div class="skill-items">Web app pentesting · OWASP Top 10 · Burp Suite · DOM manipulation · API security testing · Responsible disclosure</div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Mobile Security</div>
+        <div class="skill-items">Android APK analysis · Reverse engineering · MobSF · JADX GUI · Malware analysis · MITRE ATT&CK mapping</div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Cloud & Infrastructure</div>
+        <div class="skill-items">AWS S3 misconfiguration · Broken access control · CVSS 3.1 scoring · Network config (Cisco) · TCP/IP · VLAN</div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🧪</div>
+        <div class="skill-name">Software QA</div>
+        <div class="skill-items">Manual testing · Test case design · Bug documentation · SDLC · Security feature validation · Risk analysis</div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🛠️</div>
+        <div class="skill-name">Tools & Stack</div>
+        <div class="skill-items">Burp Suite · Kali Linux · Nmap · MobSF · JADX GUI · Postman · Notion · Trello · Microsoft Excel</div>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📋</div>
+        <div class="skill-name">Reporting</div>
+        <div class="skill-items">Security testing reports · Executive summary · PoC documentation · Business impact analysis · OWASP ASVS · CVSS scoring</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">|02 — work</div>
+    <h2 class="section-title">Security Projects</h2>
+    <p class="section-desc">Real-world vulnerability findings and security research with responsible disclosure.</p>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-high">HIGH</span>
+        <div class="project-body">
+          <div class="project-title">Metabase JWT Token Exposure on Frontend</div>
+          <div class="project-meta">March 2026 · Responsible Disclosure · Closed ✓</div>
+          <div class="project-desc">Discovered Metabase JWT tokens hardcoded in the frontend via the global <code style="font-family:var(--mono);font-size:0.8em;background:var(--bg);padding:0.1em 0.35em;border-radius:4px;">window.Metabase</code> object, accessible to anyone via Ctrl+U. Extracted the token, replayed it via Postman to the Metabase API, and received HTTP 200 OK with full financial dashboard data — no login required. Root cause: token generation on frontend instead of backend, with no session binding.</div>
+          <div class="project-tags">
+            <span class="project-tag">OWASP A01</span>
+            <span class="project-tag">OWASP A07</span>
+            <span class="project-tag">JWT Replay</span>
+            <span class="project-tag">Auth Bypass</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/1zm6TWb80TBkinX6l-T_LADhiOo3i8Xsn/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--danger)">
+          <span class="cvss-num">—</span>
+          <span class="cvss-label">HIGH</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-high">HIGH</span>
+        <div class="project-body">
+          <div class="project-title">Broken Access Control — WhatsApp E-Statement Feature</div>
+          <div class="project-meta">March 2026 · Responsible Disclosure · Closed ✓</div>
+          <div class="project-desc">Discovered that a Reseller role could bypass frontend-only access restriction via DOM manipulation using browser DevTools, successfully triggering a CS-only WhatsApp send API endpoint. The backend performed zero role validation — accepting any authenticated request regardless of privilege level.</div>
+          <div class="project-tags">
+            <span class="project-tag">OWASP A01</span>
+            <span class="project-tag">DOM Manipulation</span>
+            <span class="project-tag">RBAC Bypass</span>
+            <span class="project-tag">API Security</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/1cW_GmgFhWX5iogTs_Nf9PEy_tk4k0aHL/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--danger)">
+          <span class="cvss-num">8.1</span>
+          <span class="cvss-label">CVSS 3.1</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-high">HIGH</span>
+        <div class="project-body">
+          <div class="project-title">Sensitive File Exposure via Publicly Accessible S3 Bucket</div>
+          <div class="project-meta">April 2026 · Responsible Disclosure · Closed ✓</div>
+          <div class="project-desc">Identified that sensitive user business documents (operational permits, legal files, brand assets) were stored in a publicly accessible AWS S3 bucket with no authentication required. Direct URLs were embedded in HTML source and accessible by any unauthenticated third party.</div>
+          <div class="project-tags">
+            <span class="project-tag">OWASP A01</span>
+            <span class="project-tag">AWS S3</span>
+            <span class="project-tag">Broken Access Control</span>
+            <span class="project-tag">IDOR</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--danger)">
+          <span class="cvss-num">7.5</span>
+          <span class="cvss-label">CVSS 3.1</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-med">MEDIUM</span>
+        <div class="project-body">
+          <div class="project-title">PII Exposure via Unauthorized Data Visibility on Member List</div>
+          <div class="project-meta">April 2026 · Responsible Disclosure · Closed ✓</div>
+          <div class="project-desc">Found missing page-level and object-level access control on a member management page, exposing other users' PII (full name, phone, email) without authorization. Password change fields were also rendered in the form UI without authorization checks.</div>
+          <div class="project-tags">
+            <span class="project-tag">OWASP A01</span>
+            <span class="project-tag">OWASP A02</span>
+            <span class="project-tag">PII Exposure</span>
+            <span class="project-tag">UU PDP</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--warn)">
+          <span class="cvss-num">6.5</span>
+          <span class="cvss-label">CVSS 3.1</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-info">RESEARCH</span>
+        <div class="project-body">
+          <div class="project-title">Android Malware Analysis & Reverse Engineering</div>
+          <div class="project-meta">Academic Project · MobSF · JADX GUI · MITRE ATT&CK</div>
+          <div class="project-desc">Conducted static analysis and reverse engineering on a malicious APK (SMS Stealer/Spyware) in an isolated Docker environment. Identified C2 infrastructure, hardcoded Firebase/Google API credentials, and evasion techniques. Extracted IOCs and mapped attack flow to MITRE ATT&CK framework.</div>
+          <div class="project-tags">
+            <span class="project-tag">Malware Analysis</span>
+            <span class="project-tag">Reverse Engineering</span>
+            <span class="project-tag">MITRE ATT&CK</span>
+            <span class="project-tag">IOC Extraction</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/1CV6DdB6VHvyBiwiCD6853NtBV4JVgmfc/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--accent)">
+          <span class="cvss-num">—</span>
+          <span class="cvss-label">Research</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-info">PBL</span>
+        <div class="project-body">
+          <div class="project-title">Alumni Network Platform Vulnerability Analysis</div>
+          <div class="project-meta">Academic Project · Burp Suite · OWASP ASVS</div>
+          <div class="project-desc">Performed penetration testing combining automated scanning and manual testing. Identified critical IDOR and Broken Authentication vulnerabilities, executed JWT token replay attacks and API parameter manipulation. Produced full technical report with exploitation evidence and OWASP ASVS-aligned mitigation.</div>
+          <div class="project-tags">
+            <span class="project-tag">IDOR</span>
+            <span class="project-tag">JWT Replay Attack</span>
+            <span class="project-tag">Broken Auth</span>
+            <span class="project-tag">Burp Suite</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn-report" href="https://drive.google.com/file/d/1XF5QWFd1FjQBJkVKPyKHB6yI1-wj1R4n/view?usp=drive_link" target="_blank">
+              <span class="btn-report-icon">📄</span> View Full Report
+            </a>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--accent)">
+          <span class="cvss-num">—</span>
+          <span class="cvss-label">Academic</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <span class="severity-badge sev-green">NETWORK</span>
+        <div class="project-body">
+          <div class="project-title">WAN Multi-City Network Implementation</div>
+          <div class="project-meta">Academic Project · Cisco · VLAN · Routing</div>
+          <div class="project-desc">Performed validation and testing of inter-site WAN network configurations. Verified routing compliance, VLAN segmentation, and overall system stability across multiple city nodes.</div>
+          <div class="project-tags">
+            <span class="project-tag">Cisco</span>
+            <span class="project-tag">VLAN</span>
+            <span class="project-tag">WAN</span>
+            <span class="project-tag">Network Testing</span>
+          </div>
+        </div>
+        <div class="cvss-chip" style="color:var(--accent2)">
+          <span class="cvss-num">—</span>
+          <span class="cvss-label">Network</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTF -->
+<section id="ctf">
+  <div class="container">
+    <div class="section-label">|03 — capture the flag</div>
+    <h2 class="section-title">CTF Write-Ups</h2>
+    <p class="section-desc">Hands-on challenges from picoCTF — each write-up explains not just the steps taken, but the underlying reasoning behind every decision.</p>
+
+    <div class="ctf-stats-row">
+      <div class="ctf-stat fade-in">
+        <div class="ctf-stat-num">3</div>
+        <div class="ctf-stat-label">Flags Captured</div>
+      </div>
+      <div class="ctf-stat fade-in">
+        <div class="ctf-stat-num">3</div>
+        <div class="ctf-stat-label">Categories</div>
+      </div>
+      <div class="ctf-stat fade-in">
+        <div class="ctf-stat-num">picoCTF</div>
+        <div class="ctf-stat-label">Platform</div>
+      </div>
+    </div>
+
+    <div class="ctf-grid">
+
+      <!-- DISKO 1 -->
+      <div class="ctf-card fade-in">
+        <span class="ctf-cat-badge ctf-forensics">FORENSICS</span>
+        <div class="ctf-body">
+          <div class="ctf-title">DISKO 1 — Disk Image Flag Recovery</div>
+          <div class="ctf-meta">picoCTF · Disk Forensics · Linux CLI</div>
+          <div class="ctf-desc">A raw disk image stores all data sequentially — including deleted files and plaintext strings — without needing the filesystem to be mounted. By extracting all printable ASCII sequences and filtering for the flag pattern, the flag can be recovered directly from binary data without a full forensic mount.</div>
+          <div class="ctf-tags">
+            <span class="ctf-tag">disk forensics</span>
+            <span class="ctf-tag">strings</span>
+            <span class="ctf-tag">grep</span>
+            <span class="ctf-tag">linux cli</span>
+          </div>
+          <button class="ctf-toggle" onclick="toggleCTF(this)">
+            <i class="ctf-toggle-icon">›</i> View Write-Up
+          </button>
+          <div class="ctf-detail">
+            <div class="ctf-detail-inner">
+              <ul class="ctf-steps">
+                <li><strong>Why decompress first?</strong> <code>gunzip</code> restores the raw <code>.dd</code> image — <code>strings</code> cannot parse compressed binary correctly, so decompression is required before any analysis.</li>
+                <li><strong>Why <code>strings</code>?</strong> It scans byte-by-byte for sequences of printable characters (≥4 chars by default), surfacing human-readable data embedded anywhere in the binary — regardless of filesystem structure.</li>
+                <li><strong>Why pipe to <code>grep</code>?</strong> The output of <code>strings</code> can be thousands of lines. Piping to <code>grep picoCTF</code> filters only lines matching the known flag format, reducing noise instantly.</li>
+              </ul>
+              <div class="ctf-code"><span class="c"># Decompress the disk image</span>
+gunzip disko-1.dd.gz
+<span class="c"># Extract all printable strings, filter for flag pattern</span>
+strings disko-1.dd | grep picoCTF</div>
+            </div>
+          </div>
+        </div>
+        <div class="ctf-chip">
+          <span class="ctf-chip-top" style="color:var(--accent)">🔍</span>
+          <span class="ctf-chip-label">Forensics</span>
+        </div>
+      </div>
+
+      <!-- SSTI -->
+      <div class="ctf-card fade-in">
+        <span class="ctf-cat-badge ctf-web">WEB EXPLOIT</span>
+        <div class="ctf-body">
+          <div class="ctf-title">SSTI — Server-Side Template Injection via Jinja2</div>
+          <div class="ctf-meta">picoCTF · Web Exploitation · Remote Code Execution</div>
+          <div class="ctf-desc">When user input is embedded directly into a template engine without sanitization, the server evaluates it as code rather than data. This breaks the boundary between input and execution — a fundamental security failure that escalates from data reflection to full Remote Code Execution on the host.</div>
+          <div class="ctf-flag">picoCTF{s4rv3r_s1d3_t3mp14t3_1nj3ct10n5_4r3_c001_3066c7bd}</div>
+          <div class="ctf-tags">
+            <span class="ctf-tag">SSTI</span>
+            <span class="ctf-tag">Jinja2</span>
+            <span class="ctf-tag">RCE</span>
+            <span class="ctf-tag">web exploitation</span>
+          </div>
+          <button class="ctf-toggle" onclick="toggleCTF(this)">
+            <i class="ctf-toggle-icon">›</i> View Write-Up
+          </button>
+          <div class="ctf-detail">
+            <div class="ctf-detail-inner">
+              <ul class="ctf-steps">
+                <li><strong>Why inject <code>{{7*7}}</code>?</strong> Template engines evaluate expressions inside <code>{{}}</code>. If the server returns <code>49</code> instead of the literal string <code>{{7*7}}</code>, it confirms the input is being executed server-side — proof of SSTI.</li>
+                <li><strong>Why use the Jinja2 context chain?</strong> Jinja2 sandboxes direct access to <code>os</code>, but the template context object retains references to Python built-ins. Traversing <code>cycler.__init__.globals</code> reaches the <code>os</code> module without triggering sandbox restrictions.</li>
+                <li><strong>Why <code>popen().read()</code>?</strong> <code>os.popen()</code> opens a shell subprocess and returns its output as a file object — <code>.read()</code> captures stdout back into the template, making the result visible in the HTTP response.</li>
+              </ul>
+              <div class="ctf-code"><span class="c"># Confirm SSTI — server should return 49, not the literal string</span>
+{{7*7}}
+
+<span class="c"># RCE via Jinja2 context chain to bypass sandbox</span>
+{{ self._TemplateReference__context.cycler.__init__.globals.os.popen('cat flag').read() }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="ctf-chip">
+          <span class="ctf-chip-top">✓</span>
+          <span class="ctf-chip-label">Solved</span>
+        </div>
+      </div>
+
+      <!-- Cookie Monster -->
+      <div class="ctf-card fade-in">
+        <span class="ctf-cat-badge ctf-web">WEB EXPLOIT</span>
+        <div class="ctf-body">
+          <div class="ctf-title">Cookie Monster — Sensitive Data in Browser Cookie</div>
+          <div class="ctf-meta">picoCTF · Web Exploitation · Cookie Analysis</div>
+          <div class="ctf-desc">Cookies are client-side storage — the browser holds them and sends them with every request. Storing secrets in cookies, even Base64-encoded, is not encryption: Base64 is an encoding scheme with no key, trivially reversible by anyone who can read the cookie value via DevTools or HTTP interception.</div>
+          <div class="ctf-flag">picoCTF{c00k1e_m0nster_l0ves_c00kies_c430AE20}</div>
+          <div class="ctf-tags">
+            <span class="ctf-tag">cookie analysis</span>
+            <span class="ctf-tag">base64</span>
+            <span class="ctf-tag">CyberChef</span>
+            <span class="ctf-tag">devtools</span>
+          </div>
+          <button class="ctf-toggle" onclick="toggleCTF(this)">
+            <i class="ctf-toggle-icon">›</i> View Write-Up
+          </button>
+          <div class="ctf-detail">
+            <div class="ctf-detail-inner">
+              <ul class="ctf-steps">
+                <li><strong>Why DevTools → Application → Cookies?</strong> Browsers expose all cookie key-value pairs in plaintext via the Application tab. No proxy or interception needed — if a cookie is set, it's readable here.</li>
+                <li><strong>Why Base64, not encryption?</strong> Base64 encodes binary data as ASCII for safe transport — it has no secret key and provides zero confidentiality. Anyone with the encoded string can decode it instantly. Developers sometimes mistake it for obfuscation.</li>
+                <li><strong>Why remove non-alphabet chars first?</strong> URL-encoded cookies may contain <code>%3D</code> (padding <code>=</code>) or spaces that break standard Base64 decoders. Stripping non-alphabet characters normalizes the string before decoding.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ctf-chip">
+          <span class="ctf-chip-top">✓</span>
+          <span class="ctf-chip-label">Solved</span>
+        </div>
+      </div>
+
+      <!-- Pie Time -->
+      <div class="ctf-card fade-in">
+        <span class="ctf-cat-badge ctf-binary">BINARY EXPLOIT</span>
+        <div class="ctf-body">
+          <div class="ctf-title">Pie Time — Bypassing PIE via Leaked Base Address</div>
+          <div class="ctf-meta">picoCTF · Binary Exploitation · GDB · PIE Bypass</div>
+          <div class="ctf-desc">PIE (Position Independent Executable) randomizes a binary's load address at runtime, making hardcoded jump targets useless. However, if any runtime address leaks — even just <code>main()</code> — the entire binary's layout is recoverable, since relative offsets between functions remain fixed regardless of where the binary is loaded.</div>
+          <div class="ctf-flag">picoCTF{b4s1c_p051t10n_1nd3p3nd3nc3_f8845f06}</div>
+          <div class="ctf-tags">
+            <span class="ctf-tag">PIE bypass</span>
+            <span class="ctf-tag">GDB</span>
+            <span class="ctf-tag">binary exploitation</span>
+            <span class="ctf-tag">offset calculation</span>
+          </div>
+          <button class="ctf-toggle" onclick="toggleCTF(this)">
+            <i class="ctf-toggle-icon">›</i> View Write-Up
+          </button>
+          <div class="ctf-detail">
+            <div class="ctf-detail-inner">
+              <ul class="ctf-steps">
+                <li><strong>Why disassemble locally with GDB?</strong> The binary's static layout — addresses before ASLR is applied — is fixed on disk. GDB reveals the compile-time addresses of <code>main</code> and <code>win</code>, so their offset can be calculated without running the binary on the target server.</li>
+                <li><strong>Why does one leaked address break PIE?</strong> PIE shifts the entire binary by a single random base offset. All functions shift by the same amount. So: <code>win_runtime = main_runtime − (main_static − win_static)</code>. One leak defeats the entire randomization.</li>
+                <li><strong>Why subtract, not add?</strong> <code>main</code> sits at a higher address than <code>win</code> in this binary. The offset is <code>0x60</code> — subtracting it from the leaked <code>main</code> address gives the exact runtime location of <code>win()</code>.</li>
+              </ul>
+              <div class="ctf-code"><span class="c"># Get static offsets from local binary</span>
+(gdb) disassemble main   <span class="c"># note first instruction address</span>
+(gdb) disassemble win    <span class="c"># note first instruction address</span>
+
+<span class="c"># offset = main_static - win_static = 0x60</span>
+<span class="c"># win_runtime = leaked_main_runtime - 0x60</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="ctf-chip">
+          <span class="ctf-chip-top" style="color:var(--warn)">✓</span>
+          <span class="ctf-chip-label">Solved</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-label">| 04 — credentials</div>
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-desc">Professional and academic certifications across cybersecurity and networking.</p>
+    <div class="certs-grid">
+      <div class="cert-card fade-in">
+        <div class="cert-icon">🔐</div>
+        <div>
+          <div class="cert-name">Cyber Security Penetration Testing</div>
+          <div class="cert-org">ID-Networkers · 2026</div>
+        </div>
+        <span class="cert-badge cb-boot">Bootcamp</span>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-name">Networks | CCNA</div>
+          <div class="cert-org">Cisco Networking Academy</div>
+        </div>
+        <span class="cert-badge cb-int">International</span>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">🤖</div>
+        <div>
+          <div class="cert-name">Kecerdasan Buatan (AI)</div>
+          <div class="cert-org">Microsoft</div>
+        </div>
+        <span class="cert-badge cb-int">International</span>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">🖧</div>
+        <div>
+          <div class="cert-name">Junior Network Administrator</div>
+          <div class="cert-org">BNSP / VGSA · 2025–2027</div>
+        </div>
+        <span class="cert-badge cb-nat">National</span>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">💻</div>
+        <div>
+          <div class="cert-name">Teknisi Komputer Jaringan</div>
+          <div class="cert-org">BNSP · 2023–2025</div>
+        </div>
+        <span class="cert-badge cb-nat">National</span>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon">🏫</div>
+        <div>
+          <div class="cert-name">Kompetensi Keahlian TKJ</div>
+          <div class="cert-org">PT Media Sarana Data Bali · 2023</div>
+        </div>
+        <span class="cert-badge cb-ind">Industry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">|05 — journey</div>
+    <h2 class="section-title">Experience & Education</h2>
+    <p class="section-desc">Professional experience and academic background.</p>
+    <div class="exp-timeline">
+      <div class="exp-card fade-in">
+        <div>
+          <div class="exp-role">Software Quality Assurance Intern</div>
+          <div class="exp-org">PT Jinom Network Indonesia</div>
+          <div class="exp-desc">Performed manual testing and test case design for web-based applications. Identified and documented bugs including a High-severity JWT token exposure vulnerability (OWASP A01, A02, A07). Produced structured vulnerability reports with root cause analysis and mitigation recommendations.</div>
+        </div>
+        <div class="exp-period">Apr 2026 – Present</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div>
+          <div class="exp-role">Applied Bachelor of Information Technology</div>
+          <div class="exp-org">Politeknik Negeri Bali · Badung, Bali</div>
+          <div class="exp-desc">6th Semester student with focus on Cybersecurity and Software Engineering. GPA: 3.89/4.00 (through Semester 5).</div>
+        </div>
+        <div class="exp-period">Sep 2023 – Present</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div>
+          <div class="exp-role">Public Relations Division</div>
+          <div class="exp-org">PNB Robotics Competition (PNBRC)</div>
+          <div class="exp-desc">Submitted sponsorship proposals and competition cover letters; managed participant flow on event day.</div>
+        </div>
+        <div class="exp-period">May–Jun 2025</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div>
+          <div class="exp-role">SMK Teknik Komputer dan Jaringan (TKJ)</div>
+          <div class="exp-org">Vocational High School</div>
+          <div class="exp-desc">Foundation in computer networking, hardware, and system administration. Graduated with industry certifications from BNSP.</div>
+        </div>
+        <div class="exp-period">Graduated 2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-desc">Open to internship and collaboration opportunities in cybersecurity and penetration testing.</p>
+    <div class="contact-grid">
+      <a class="contact-link" href="mailto:agungsaraswati251204@gmail.com">
+        <span class="contact-link-icon">✉️</span>
+        <div>
+          <div class="contact-link-label">Email</div>
+          <div class="contact-link-val">agungsaraswati251204@gmail.com</div>
+        </div>
+      </a>
+      <a class="contact-link" href="https://www.linkedin.com/in/i-gusti-agung-diah-saraswati-46ba7a286" target="_blank">
+        <span class="contact-link-icon">💼</span>
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-val">i-gusti-agung-diah-saraswati</div>
+        </div>
+      </a>
+      <a class="contact-link" href="tel:+6287747827920">
+        <span class="contact-link-icon">📱</span>
+        <div>
+          <div class="contact-link-label">WhatsApp</div>
+          <div class="contact-link-val">+62 877-4782-7920</div>
+        </div>
+      </a>
+      <a class="contact-link" href="https://mountain-chameleon-b36.notion.site/Portfolio-I-Gusti-Agung-Diah-Saraswati-3077393a3393801db4e9f57cf1dea18a" target="_blank">
+        <span class="contact-link-icon">📂</span>
+        <div>
+          <div class="contact-link-label">Notion Portfolio</div>
+          <div class="contact-link-val">View full portfolio</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 I Gusti Agung Diah Saraswati</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
