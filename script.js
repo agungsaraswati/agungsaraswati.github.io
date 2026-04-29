@@ -121,3 +121,9 @@ document.querySelectorAll('.js-email').forEach(el => {
   const val = el.querySelector('.js-email-val');
   if (val) val.textContent = email;
 });
+
+// ── BACK TO TOP ──
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });

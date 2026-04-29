@@ -948,3 +948,33 @@ footer p { font-size: 0.75rem; color: var(--muted); font-family: var(--mono); }
   .hero-photo-wrap { width: 140px; height: 140px; }
   .btn-primary, .btn-ghost { padding: 0.6rem 1rem; font-size: 0.82rem; }
 }
+
+/* ── BACK TO TOP ── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s, border-color 0.2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
