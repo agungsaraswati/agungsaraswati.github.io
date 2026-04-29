@@ -108,3 +108,16 @@ const termLines = [
   }
   setTimeout(tick, 1000);
 })();
+
+// ── CTF TOGGLE (event delegation, removes need for inline onclick) ──
+document.querySelectorAll('.ctf-toggle').forEach(btn => {
+  btn.addEventListener('click', () => toggleCTF(btn));
+});
+
+// ── EMAIL DECODE (anti-scraper: reconstructs mailto from data attributes) ──
+document.querySelectorAll('.js-email').forEach(el => {
+  const email = el.dataset.m + '@' + el.dataset.d;
+  el.href = 'mailto:' + email;
+  const val = el.querySelector('.js-email-val');
+  if (val) val.textContent = email;
+});

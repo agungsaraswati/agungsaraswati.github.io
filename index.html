@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none';" />
   <title>Diah Saraswati — Cyber Security Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -43,7 +44,7 @@
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">View Projects <span>→</span></a>
-        <a href="mailto:agungsaraswati251204@gmail.com" class="btn-ghost">Get in Touch</a>
+        <a href="#" class="btn-ghost js-email" data-m="agungsaraswati251204" data-d="gmail.com">Get in Touch</a>
       </div>
       <div class="hero-stats">
         <div class="hstat">
@@ -156,7 +157,7 @@
             <span class="ptag">JWT Replay</span>
             <span class="ptag">Auth Bypass</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/1zm6TWb80TBkinX6l-T_LADhiOo3i8Xsn/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/1zm6TWb80TBkinX6l-T_LADhiOo3i8Xsn/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#E53E3E">—</span>
@@ -179,7 +180,7 @@
             <span class="ptag">RBAC Bypass</span>
             <span class="ptag">API Security</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/1cW_GmgFhWX5iogTs_Nf9PEy_tk4k0aHL/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/1cW_GmgFhWX5iogTs_Nf9PEy_tk4k0aHL/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#E53E3E">8.1</span>
@@ -202,7 +203,7 @@
             <span class="ptag">Broken Access Control</span>
             <span class="ptag">IDOR</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#E53E3E">7.5</span>
@@ -225,7 +226,7 @@
             <span class="ptag">PII Exposure</span>
             <span class="ptag">UU PDP</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/12xiCWYVbTcAyPKFP90FvAqT8XNhwsocD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#D97706">6.5</span>
@@ -248,7 +249,7 @@
             <span class="ptag">MITRE ATT&CK</span>
             <span class="ptag">IOC Extraction</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/1CV6DdB6VHvyBiwiCD6853NtBV4JVgmfc/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/1CV6DdB6VHvyBiwiCD6853NtBV4JVgmfc/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#60A5FA">—</span>
@@ -271,7 +272,7 @@
             <span class="ptag">Broken Auth</span>
             <span class="ptag">Burp Suite</span>
           </div>
-          <a class="project-link" href="https://drive.google.com/file/d/1XF5QWFd1FjQBJkVKPyKHB6yI1-wj1R4n/view?usp=drive_link" target="_blank">View Full Report →</a>
+          <a class="project-link" href="https://drive.google.com/file/d/1XF5QWFd1FjQBJkVKPyKHB6yI1-wj1R4n/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Full Report →</a>
         </div>
         <div class="project-cvss">
           <span class="cvss-val" style="color:#60A5FA">—</span>
@@ -345,7 +346,7 @@
           <span class="ctf-tag">grep</span>
           <span class="ctf-tag">linux cli</span>
         </div>
-        <button class="ctf-toggle" onclick="toggleCTF(this)">
+        <button class="ctf-toggle">
           <i class="ctf-toggle-icon">›</i> View Write-Up
         </button>
         <div class="ctf-detail">
@@ -378,7 +379,7 @@ strings disko-1.dd | grep picoCTF</div>
           <span class="ctf-tag">RCE</span>
           <span class="ctf-tag">web exploitation</span>
         </div>
-        <button class="ctf-toggle" onclick="toggleCTF(this)">
+        <button class="ctf-toggle">
           <i class="ctf-toggle-icon">›</i> View Write-Up
         </button>
         <div class="ctf-detail">
@@ -412,7 +413,7 @@ strings disko-1.dd | grep picoCTF</div>
           <span class="ctf-tag">CyberChef</span>
           <span class="ctf-tag">devtools</span>
         </div>
-        <button class="ctf-toggle" onclick="toggleCTF(this)">
+        <button class="ctf-toggle">
           <i class="ctf-toggle-icon">›</i> View Write-Up
         </button>
         <div class="ctf-detail">
@@ -441,7 +442,7 @@ strings disko-1.dd | grep picoCTF</div>
           <span class="ctf-tag">binary exploitation</span>
           <span class="ctf-tag">offset calculation</span>
         </div>
-        <button class="ctf-toggle" onclick="toggleCTF(this)">
+        <button class="ctf-toggle">
           <i class="ctf-toggle-icon">›</i> View Write-Up
         </button>
         <div class="ctf-detail">
@@ -585,15 +586,15 @@ strings disko-1.dd | grep picoCTF</div>
         <p class="contact-desc">Open to internship and collaboration opportunities in cybersecurity and penetration testing.</p>
       </div>
       <div class="contact-links">
-        <a class="contact-item" href="mailto:agungsaraswati251204@gmail.com">
+        <a class="contact-item js-email" href="#" data-m="agungsaraswati251204" data-d="gmail.com">
           <span class="ci-icon">✉</span>
           <div>
             <div class="ci-label">Email</div>
-            <div class="ci-val">agungsaraswati251204@gmail.com</div>
+            <div class="ci-val js-email-val">&#x61;&#x67;&#x75;&#x6E;&#x67;&#x73;&#x61;&#x72;&#x61;&#x73;&#x77;&#x61;&#x74;&#x69;&#x32;&#x35;&#x31;&#x32;&#x30;&#x34;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</div>
           </div>
           <span class="ci-arrow">↗</span>
         </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/i-gusti-agung-diah-saraswati-46ba7a286" target="_blank">
+        <a class="contact-item" href="https://www.linkedin.com/in/i-gusti-agung-diah-saraswati-46ba7a286" target="_blank" rel="noopener noreferrer">
           <span class="ci-icon">💼</span>
           <div>
             <div class="ci-label">LinkedIn</div>
@@ -601,7 +602,7 @@ strings disko-1.dd | grep picoCTF</div>
           </div>
           <span class="ci-arrow">↗</span>
         </a>
-        <a class="contact-item" href="https://instagram.com/agung_saraswati2" target="_blank">
+        <a class="contact-item" href="https://instagram.com/agung_saraswati2" target="_blank" rel="noopener noreferrer">
           <span class="ci-icon">📷</span>
           <div>
             <div class="ci-label">Instagram</div>
@@ -609,7 +610,7 @@ strings disko-1.dd | grep picoCTF</div>
           </div>
           <span class="ci-arrow">↗</span>
         </a>
-        <a class="contact-item" href="https://mountain-chameleon-b36.notion.site/Portfolio-I-Gusti-Agung-Diah-Saraswati-3077393a3393801db4e9f57cf1dea18a" target="_blank">
+        <a class="contact-item" href="https://mountain-chameleon-b36.notion.site/Portfolio-I-Gusti-Agung-Diah-Saraswati-3077393a3393801db4e9f57cf1dea18a" target="_blank" rel="noopener noreferrer">
           <span class="ci-icon">📂</span>
           <div>
             <div class="ci-label">Notion Portfolio</div>
