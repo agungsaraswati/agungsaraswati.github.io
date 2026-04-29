@@ -754,6 +754,66 @@ section { padding: 6rem 2.5rem; }
 }
 .exp-edu { background: var(--accent-dim); color: var(--accent); border-color: var(--accent-border); }
 .exp-org-badge { background: rgba(167,139,250,0.1); color: #A78BFA; border-color: rgba(167,139,250,0.2); }
+.exp-boot { background: var(--warn-dim); color: var(--warn); border-color: rgba(251,191,36,0.2); }
+
+/* ── WRITING ── */
+#writing { background: var(--bg2); }
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.writing-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.75rem;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.writing-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+}
+.wcard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wcard-badge {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+.wcard-threat { background: var(--danger-dim); color: var(--danger); border: 1px solid rgba(248,113,113,0.2); }
+.wcard-ad { background: var(--blue-dim); color: var(--blue); border: 1px solid rgba(96,165,250,0.2); }
+.wcard-ctf { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-border); }
+.wcard-date { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); }
+.wcard-title {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+}
+.wcard-desc { font-size: 0.82rem; color: var(--muted2); line-height: 1.7; flex: 1; }
+.wcard-link { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); margin-top: 0.25rem; }
+.writing-footer { text-align: center; padding-top: 0.5rem; }
+.writing-more {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.writing-more:hover { color: var(--accent); }
 
 /* ── CONTACT ── */
 #contact { background: var(--bg); }
@@ -853,6 +913,7 @@ footer p { font-size: 0.75rem; color: var(--muted); font-family: var(--mono); }
   .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .ctf-grid { grid-template-columns: 1fr; }
   .certs-grid { grid-template-columns: 1fr; }
+  .writing-grid { grid-template-columns: 1fr; }
   .exp-item { grid-template-columns: 120px 1fr; gap: 1.25rem; }
   .exp-type-badge { display: none; }
 }
